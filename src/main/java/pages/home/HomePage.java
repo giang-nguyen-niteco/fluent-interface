@@ -5,9 +5,6 @@ public class HomePage {
     HomeController homeController;
     HomeVerifier homeVerifier;
 
-    private HomePage() {
-    }
-
     private HomePage(HomeController homeController, HomeVerifier homeVerifier) {
         this.homeController = homeController;
         this.homeVerifier = homeVerifier;

@@ -9,7 +9,7 @@ import static driver.manager.DriverFactory.getChromeDriver;
 
 public class LoginElement {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     private LoginElement() {
         this.driver = getChromeDriver();
@@ -28,7 +28,5 @@ public class LoginElement {
 
     @FindBy(xpath = "//button[@class='ui red large fluid button']")
     WebElement SUBMIT;
-
-
 
 }

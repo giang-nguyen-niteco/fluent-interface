@@ -10,8 +10,7 @@ public class HomeVerifier {
     public HomeVerifier() {
     }
 
-    public HomeVerifier verifyUserImageDisplayed() {
+    public void verifyUserImageDisplayed() {
         assertTrue(homeElement.USER_IMAGE.isDisplayed());
-        return this;
     }
 }

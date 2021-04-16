@@ -18,8 +18,7 @@ public class BaseTest {
     @BeforeEach
     public void setUp(){
         driver = getChromeDriver();
-        driver.get("https://portal-rga.niteco.com/");
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.get("https://xxx/");
         driver.manage().window().maximize();
         wait = getWebDriverWait();
     }
@@ -27,7 +26,7 @@ public class BaseTest {
     @AfterEach
     public void tearDown(){
         if (driver != null) {
-            driver.close();
+            driver.quit();
         }
     }
 

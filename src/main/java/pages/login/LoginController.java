@@ -16,7 +16,7 @@ public class LoginController {
         return this;
     }
 
-    public void submit(){
+    public void submit() {
         loginElement.SUBMIT.click();
     }
 }

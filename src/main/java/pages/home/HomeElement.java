@@ -9,7 +9,8 @@ import static driver.manager.DriverFactory.getChromeDriver;
 
 public class HomeElement {
 
-    WebDriver driver;
+    private WebDriver driver;
+
     private HomeElement() {
         this.driver = getChromeDriver();
         PageFactory.initElements(driver, this);
@@ -24,7 +25,6 @@ public class HomeElement {
 
     @FindBy(xpath = "//i[@class='user circle large icon']")
     WebElement USER_IMAGE;
-
 
 
 }
